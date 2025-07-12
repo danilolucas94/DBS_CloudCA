@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Setting Variables for our VM"
+echo -e "\n\e[32m*** Setting Variables for our VM  ***\e[0m"
 
 PROJECT_ID="dbscloudca"
 ZONE="us-central1-c"
@@ -12,13 +12,16 @@ DISK_SIZE="250"
 STATIC_IP_NAME="ca-cloud-vm"
 FIREWALL_RULE="allow-http-ssh"
 
+echo -e "Variables set"
+
 # Set project
+echo -e "\n\e[32m*** Setting Project ID on GCloud  ***\e[0m"
 gcloud config set project $PROJECT_ID
 
-echo "Reserving a static external IP \n" 
+echo -e "\n\e[32m*** Reserving a static external IP  ***\e[0m"
 gcloud compute addresses create $STATIC_IP_NAME --region=us-central1
 
-echo "Creating VM \n"
+echo -e "\n\e[32m*** Creating VM  ***\e[0m"
 gcloud compute instances create $VM_NAME \
   --zone=$ZONE \
   --machine-type=$MACHINE_TYPE \
@@ -36,15 +39,18 @@ gcloud compute instances create $VM_NAME \
   --no-shielded-integrity-monitoring
 
 # Timer to make sure that our VM is up and running
+echo -e "\n\e[32mWaiting for VM initialization...\e[0m"
 sleep 30
 
-echo "Creating firewall rule to allow HTTP and SSH \n"
+echo -e "\n\e[32m*** Creating firewall rule to allow HTTP and SSH ***\e[0m"
 gcloud compute firewall-rules create $FIREWALL_RULE \
   --allow tcp:80,tcp:22 \
   --target-tags=http-server,ssh-server
 
 sleep 10
 
-echo "Connecting using SSH and install Apache and create Hello World file \n"
+echo -e "\n\e[32m*** Connecting using SSH and install Apache and create Hello World file ***\e[0m"
 gcloud compute ssh $VM_NAME --zone=$ZONE --command="sudo apt-get update && sudo apt-get install -y apache2 && echo 'Hello World' | sudo tee /var/www/html/index.html"
+
+echo -e "\n\e[32m*** Webserver updated and running ***\e[0m\n"
 
