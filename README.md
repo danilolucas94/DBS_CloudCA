@@ -78,12 +78,6 @@ The Compute Engine console will show the VM as "RUNNING".
 - Billing issues: Make sure your project has billing enabled.
 - Firewall issues: If HTTP/SSH access fails, verify the firewall rules and VM tags.
 
-**Repository Structure**
-
-├── vm-script.sh      # Deployment script
-├── README.md         # This documentation
-├── (screenshots/)    # (Optional) Screenshots for demonstration
-
 **Additional Notes**
 The script is idempotent: re-running it will not duplicate resources.
 Modify the script to customize VM specs, network settings, or web server configuration as needed.
