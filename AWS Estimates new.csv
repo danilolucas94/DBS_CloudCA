@@ -1,0 +1,26 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,1107.0100000000002,13284.12,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,Canada (Central),,Amazon EC2 ,0,334.356,4012.27,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 6), Advance EC2 instance (t3.large), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), EBS Storage amount (250 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,Europe (Stockholm),,Amazon EC2 ,0,344.4,4132.80,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 6), Advance EC2 instance (t3.large), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), EBS Storage amount (250 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,Europe (Stockholm),,Application Load Balancer,0,36.94,443.28,USD,,Number of Application Load Balancers (1)
+My Estimate,Europe (Stockholm),,Network Load Balancer,0,34.980000000000004,419.76,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TLS (1 TB per month), Processed bytes per NLB for TCP (1 TB per month), Processed bytes per NLB for UDP (1 TB per month)"
+My Estimate,Europe (Stockholm),,Gateway Load Balancer,0,24.85,298.20,USD,,"Number of Availability Zones that Gateway Load Balancer is deployed to (1), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (1 TB per month)"
+My Estimate,Canada (Central),,Public IPv4 Address,0,21.9,262.80,USD,,"Number of In-use public IPv4 addresses (6), Number of Idle public IPv4 addresses ()"
+My Estimate,Canada (Central),,Data Transfer,0,40.96,491.52,USD,,"DT Inbound: All other regions (1 TB per month), DT Outbound: All other regions (1 TB per month), DT Intra-Region: (1 TB per month), Data transfer cost (40.96)"
+My Estimate,Europe (Stockholm),,Public IPv4 Address,0,21.9,262.80,USD,,"Number of In-use public IPv4 addresses (6), Number of Idle public IPv4 addresses ()"
+My Estimate,Europe (Stockholm),,Data Transfer,0,40.96,491.52,USD,,"DT Inbound: All other regions (1 TB per month), DT Outbound: All other regions (1 TB per month), DT Intra-Region: (1 TB per month), Data transfer cost (40.96)"
+My Estimate,Canada (Central),,Application Load Balancer,0,40.6,487.20,USD,,Number of Application Load Balancers (1)
+My Estimate,Canada (Central),,Network Load Balancer,0,38.33,459.96,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TLS (1 TB per month), Processed bytes per NLB for TCP (1 TB per month), Processed bytes per NLB for UDP (1 TB per month)"
+My Estimate,Canada (Central),,Gateway Load Balancer,0,26.189999999999998,314.28,USD,,"Number of Availability Zones that Gateway Load Balancer is deployed to (1), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (1 TB per month)"
+Global,All,Business support plan,AWS Support,0,100.64 ,1207.68,USD,"Supports 24/7 phone, chat, and email access to Cloud Support Engineers for unlimited contacts, with and a response time of less than 1 hour."
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
